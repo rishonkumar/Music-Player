@@ -1,5 +1,5 @@
 :root {
-  --bg_color_1: #443892;
+  --bg_color_1: #070130;
   --bg_color_2: #0d0065;
   --bg_color_3: #222b5c;
   --bg_music_bar: #2b2b2a;
@@ -51,11 +51,11 @@ aside {
   padding: 0px;
   margin-top: 8%;
   margin-left: -1vw;
-  vertical-align: top; /*Ensures that aside is displayed right beside main at the top*/
+  vertical-align: top;
 }
 
 .hide {
-  display: none; /*This class hides any div that it is applie to*/
+  display: none;
 }
 
 /*Navigation Bar*/
@@ -218,7 +218,6 @@ aside {
 #latest-release-img:hover > .hide {
   display: block;
 }
-/*Dropdown bar of latest release section*/
 #dropdown {
   height: 50px;
   width: 50px;
@@ -255,9 +254,7 @@ aside {
 #dropdown:hover #dropdown-list {
   display: block;
 }
-/*End of Dropdown bar of latest release section*/
-/*End of latest release section*/
-/*Begining of popular artist section*/
+/*Popular artist section*/
 #popular-artists h1 {
   font-family: helvetica, sans-serif;
   color: var(--font_color_1);
@@ -498,8 +495,6 @@ aside {
   opacity: 1;
   font-weight: 600;
 }
-/*End of genre section*/
-/*Latest Songs section*/
 #latest-songs h1 {
   font-family: sans-serif;
   color: var(--font_color_1);
@@ -538,7 +533,7 @@ aside {
   opacity: 0.8;
 }
 #latest-songs-item-img-1:hover > .hide {
-  display: block; /*Play button displayed on hover*/
+  display: block;
 }
 #latest-songs-item-img-2 {
   background-image: url(Images/badhabits.jpg);
@@ -696,8 +691,6 @@ aside {
 #play {
   margin-top: 0%;
 }
-/*End of latest songs section*/
-/*End of main*/
 
 /*Aside*/
 #aside-header {
@@ -807,9 +800,7 @@ aside {
   color: var(--font_color_1);
   font-size: 1.2rem;
 }
-/*End of aside section*/
 
-/*Music Bar*/
 #music-bar {
   height: 100px;
   width: 1500px;
@@ -837,7 +828,7 @@ aside {
   position: fixed;
 }
 #music-bar:target {
-  display: block; /*When play button is clicked music bar is displayed*/
+  display: block;
 }
 #music-icon a {
   position: fixed;
@@ -934,9 +925,7 @@ aside {
   top: 2.5%;
 }
 
-/*This CSS is used for the Single Playlist Screen html page common properties such as
-main, aside etc. are same as before*/
-/*Artist Template Begining*/
+/*CSS is used for the Single Playlist Screen html page */
 #artist-template {
   height: auto;
   width: 95%;
@@ -956,7 +945,7 @@ main, aside etc. are same as before*/
       rgba(13, 0, 101, 0) 10%,
       rgba(13, 0, 101, 1)
     ),
-    url(Images/artist-6.jpg); /*Adding linear gradient*/
+    url(Images/arjit2.jpg); /*Adding linear gradient*/
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1001,7 +990,7 @@ main, aside etc. are same as before*/
 }
 
 #artist-intro {
-  font-family: helvetica, sans-serif;
+  font-family: sans-serif;
   color: var(--font_color_2);
   font-size: 0.9rem;
   text-align: justify;
@@ -1022,20 +1011,21 @@ main, aside etc. are same as before*/
 #playall-button {
   height: 1.7rem;
   width: 9rem;
-  background-image: linear-gradient(to left, #8a2387, #e94057, #f27121);
+  background-image: linear-gradient(to left, #ec7ee9, #f56e80, #f5a573);
   color: white;
   text-align: center;
   font-weight: bold;
-  font-family: helvetia, sans-serif;
-  border-radius: 0.3rem;
+  font-family: helvetia;
+  border-radius: 2rem;
   padding-top: 4%;
 }
 #follow-button {
-  font-family: helvetica, sans-serif;
-  color: var(--font_color_1);
+  font-family: helvetica;
+  color: white;
+  font-weight: bold;
+  border-radius: 2rem;
+  padding: 3%;
 }
-/*Artist Template End*/
-/*Artist Songs Begining*/
 #artist-songs {
   height: auto;
   width: 100%;
@@ -1144,12 +1134,14 @@ main, aside etc. are same as before*/
 }
 
 #artist-img {
-  background-image: url(Images/artist-7.jpg);
+  background-image: url(Images/arjit.jpg);
   height: 15vh;
   width: 15vh;
   background-position: center;
   background-size: cover;
   margin-right: -0.5rem;
+  border-radius: 2rem;
+  box-shadow: rgb(229, 235, 120);
 }
 
 #similar-artist i {
@@ -1390,14 +1382,14 @@ aside #song #song-number {
     width: 40px;
   }
   #music-title {
-    color: var(--font_color_1);
+    color: wheat;
     font-family: sans-serif;
     font-size: 0.5rem;
     margin-top: -35px;
     margin-left: 60px;
   }
   #music-title artist {
-    color: lightgrey;
+    color: rgb(133, 100, 100);
     font-size: 0.2rem;
   }
   #play-buttons {
@@ -1412,7 +1404,7 @@ aside #song #song-number {
   #progress-bar {
     height: 2px;
     width: 150px;
-    background-color: var(--font_color_3);
+    background-color: palegoldenrod;
     margin-left: 200px;
     margin-top: -1vh;
     border-radius: 2px;
@@ -1420,7 +1412,7 @@ aside #song #song-number {
   #progress-bar-volume {
     height: 2px;
     width: 70px;
-    background-color: var(--font_color_3);
+    background-color: palegreen;
     margin-left: -700px;
     margin-top: -1vh;
     border-radius: 2px;
@@ -1484,4 +1476,3 @@ aside #song #song-number {
     margin-left: 300px;
   }
 }
-/*End of responsiveness*/
